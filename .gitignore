@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+nlp-service/data/
+node_modules/
+frontend/build/
+.DS_Store
+*.log
+*.wav
+*.mp3
+*.webm
