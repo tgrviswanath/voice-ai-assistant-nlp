@@ -1,0 +1,32 @@
+The following knowledge base entries can be added to the Voice AI Assistant
+to improve its answers. Add each entry via the KB management panel or
+drop the .txt files into nlp-service/data/knowledge/.
+
+--- ENTRY 1: Machine Learning ---
+Machine learning is a subset of artificial intelligence that enables systems
+to learn from data without being explicitly programmed. Key types include
+supervised learning (labelled data), unsupervised learning (pattern discovery),
+and reinforcement learning (reward-based). Popular frameworks include
+TensorFlow, PyTorch, and scikit-learn.
+
+--- ENTRY 2: Climate Change ---
+Climate change refers to long-term shifts in global temperatures and weather
+patterns. Since the industrial revolution, human activities — primarily burning
+fossil fuels — have been the main driver. Consequences include rising sea levels,
+more frequent extreme weather events, and ecosystem disruption. The Paris
+Agreement aims to limit warming to 1.5-2 degrees Celsius above pre-industrial levels.
+
+--- ENTRY 3: How Vaccines Work ---
+Vaccines work by training the immune system to recognise and fight specific
+pathogens. They introduce a weakened or inactivated form of a virus or bacteria,
+or a piece of it (like a protein), which triggers an immune response. The body
+then creates memory cells so it can respond quickly if exposed to the real pathogen.
+mRNA vaccines, like those for COVID-19, instruct cells to produce a protein that
+triggers this immune response.
+
+--- ENTRY 4: The Internet ---
+The internet is a global network of interconnected computers that communicate
+using standardised protocols (TCP/IP). Data is broken into packets, routed
+through multiple nodes, and reassembled at the destination. The World Wide Web
+is a service built on top of the internet using HTTP/HTTPS protocols. DNS
+(Domain Name System) translates human-readable domain names into IP addresses.
