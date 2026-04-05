@@ -13,9 +13,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
       - run: sudo apt-get install -y ffmpeg libsndfile1
       - run: pip install -r requirements.txt
       - run: pip install pytest
+      - name: Lint
+        run: pip install ruff && ruff check .
       - run: pytest ../tests/nlp-service -v
 
   backend:
@@ -28,8 +36,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
       - run: pip install -r requirements.txt
       - run: pip install pytest pytest-asyncio httpx
+      - name: Lint
+        run: pip install ruff && ruff check .
       - run: pytest ../tests/backend -v
 
   frontend:
